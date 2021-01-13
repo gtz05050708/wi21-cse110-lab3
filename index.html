@@ -5,4 +5,294 @@
     <link href="/blank.css" rel="stylesheet">
     <meta name="author" content="Qingyuan Zhang">
   </head>
+
+  <body>
+    <header>
+      <h1>Qingyuan Zhang's User Page</h1>
+    </header>
+     
+    <main>
+      <div>
+        <picture>
+          <source srcset="portrait.jpg" media="(min-width: 200px)">
+          <img src="portrait.jpg" alt="My Portrait">
+        </picture>
+      </div> 
+
+      <template>
+        <picture>
+          <source srcset="portrait.jpg" media="(min-width: 200px)">
+          <img src="portrait.jpg" alt="My Portrait">
+        </picture>
+      </template>
+
+      <h1>About Me</h1>
+      <section>
+        <h2>You can reach me at:</h2>
+        <nav>
+          <a href="https://www.linkedin.com/in/qingyuan-zhang-4935a0173/">Linkedin</a></li>
+        </nav>
+        <p><b>You can set up an appointment time here.</b></p>
+        <label for="appointment">Select an appointment time:</label>
+        <input type="date" id="appointment" name="appointment"
+          value="2020-01-12"
+          min="2020-01-01" max="2020-12-31">
+      </section>
+
+      <section>
+        <h2>Programming Languages I know</h3>
+        <aside>
+          <p>Some languages such as <code>Assembly</code> aren't listed</p>
+        </aside>
+        <table>
+          <caption>Languages and Proficiency</caption>
+          <colgroup>
+            <col>
+            <col span="2">
+          </colgroup>
+          <tr>
+            <th>Language</th>
+            <th>Proficiency</th>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Proficient</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Favorite</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>Proficient</td>
+          </tr>
+          <tr>
+            <td>C++</td>
+            <td>Familiar</td>
+          </tr>
+          <tr>
+            <td>C#</td>
+            <td>Proficient</td>
+          </tr>
+        </table>
+        <h3>Favorite Programming Language</h3>
+          <p>My favorite programming language is <strong>Python</strong></p>
+      </section>
+              
+      <section>
+        <h2>Donut code, one of my favorite</h2>
+          <pre>
+              k;double sin()
+          ,cos();main(){float A=
+        0,B=0,i,j,z[1760];char b[
+      1760];printf("\x1b[2J");for(;;
+    ){memset(b,32,1760);memset(z,0,7040)
+    ;for(j=0;6.28>j;j+=0.07)for(i=0;6.28
+  >i;i+=0.02){float c=sin(i),d=cos(j),e=
+  sin(A),f=sin(j),g=cos(A),h=d+2,D=1/(c*
+  h*e+f*g+5),l=cos      (i),m=cos(B),n=s\
+  in(B),t=c*h*g-f*        e;int x=40+30*D*
+  (l*h*m-t*n),y=            12+15*D*(l*h*n
+  +t*m),o=x+80*y,          N=8*((f*e-c*d*g
+  )*m-c*d*e-f*g-l        *d*n);if(22>y&&
+  y>0&&x>0&&80>x&&D>z[o]){z[o]=D;;;b[o]=
+  ".,-~:;=!*#$@"[N>0?N:0];}}/*#****!!-*/
+    printf("\x1b[H");for(k=0;1761>k;k++)
+    putchar(k%80?b[k]:10);A+=0.04;B+=
+      0.02;}}/*****####*******!!=;:~
+        ~::==!!!**********!!!==::-
+          .,~~;;;========;;;:~-.
+              ..,--------,*/
+          </pre>
+          <footer>
+            The donut code is created by Andy Sloane.
+            Available at: <br> 
+            https://www.a1k0n.net/2011/07/20/donut-math.html
+          </footer>
+      </section>   
+          
+      <section>
+      <h2>Food I like</h2>
+        <ul>
+          <li><i>Steak</i>
+            <details>
+              <summary>Doneness</summary>
+              Medium
+            </details>
+            <ol>
+              <li><em>Ribeye</em></li>
+              <li>Sirloin</li>
+            </ol>
+          </li>
+          <li><b>Pasta</b>
+            <ul>
+              <span>
+              <li>Fettuccine</li>
+              <li>Penne</li>
+              <li>Linguine
+              </span>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Favorite Writer</h2>
+        <p>My favorite writer is <strong>George Orwell</strong></p>
+        <iframe width="600" height="450" frameborder="0" style="border:0"
+        src="orwell.jpg">
+        </iframe>
+        <figure>
+          <img src="1984.jpg"
+              height="400"
+              alt="1984">
+          <figcaption>Best book by Orwell in my opinion</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Favorite Video Game Soundtrack</h2>
+        <audio
+        controls
+        src="03 - P.T. Adamczyk - The Rebel Path.mp3">
+        </audio>
+      </section>
+
+      <section>
+        <h2>Favorite Quote by Orwell</h2>
+        <label for="quote">
+        </label>
+        <textarea id="quote" name="quote"
+                  rows="5" cols="33">
+        And the more one is conscious of one's political bias, the more chance one has of acting politically without sacrificing one's aesthetic and intellectual integrity.
+        </textarea>
+        
+      </section>
+
+      <section>
+        <h2>A project I did that mapped a 2D laserscan to a 3D pointcloud</h2>
+        <video controls width="250">
+          <source src="ServoLidar.mp4"
+                  type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </section>
+
+      <section>
+        <h2>Blank Canvas</h2>
+        <canvas width="300" height="300" style="border:1px solid #000000;">
+          An alternative text describing what your canvas displays.
+        </canvas>
+      </section>
+
+      <section>
+        <h2>Quiz About Me</h2>
+        <form>
+          <fieldset>
+            <legend>Whose my favorite author?</legend>
+        
+            <input type="radio" id="Orwell" name="author">
+            <label for="Orwell">George Orwell</label>
+        
+            <input type="radio" id="Twain" name="author">
+            <label for="Twain">Mark Twain</label>
+        
+            <input type="radio" id="Hemingway" name="author">
+            <label for="Hemingway">Ernest Hemingway</label>
+          </fieldset>
+        </form>
+
+        <hr>
+
+        <form>
+          <label for="food">Which one of these is not one of my favorite food?</label>
+          <select id="food">
+              <optgroup label="Pasta">
+                  <option>Spaghetti</option>
+                  <option>Fettuccine</option>
+              </optgroup>
+              <optgroup label="Steak">
+                  <option>Ribeye</option>
+                  <option>Sirloin</option>
+              </optgroup>
+          </select>
+        </form>
+
+        <hr>
+
+        <label for="languageselect-id">Which of the following is my favorite programming language?</label>
+        <input list="languageselect" id="languageselect-id" name="languageselect-id" />
+
+        <datalist id="languageselect">
+          <option value="C">
+          <option value="C++">
+          <option value="Python">
+          <option value="Java">
+          <option value="C#">
+      </datalist>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Suggestion for my User Page</h2>
+        <label for="picture"><b>What picture would you like to add?</b></label>
+        <input type="file"
+              id="picture" name="picture"
+              accept="image/png, image/jpeg">
+        
+        <p><b>Rate my Page</b></p>
+        <label for="score">3</label>
+        <input type="checkbox" id="3" name="3">
+
+        <label for="score">2</label>
+        <input type="checkbox" id="2" name="2">
+
+        <label for="score">1</label>
+        <input type="checkbox" id="1" name="1">
+        
+        <p><b>Please leave any addtional comments here</b></p>
+        <form>
+          <label for="name">Comments (1 to 255 characters):</label>
+          <input type="text" id="comments" name="comments" required
+                minlength="1" maxlength="255" size="40">
+          <input type="submit" value="Send Comments">
+          <input type="reset" value="Reset">
+        </form>
+
+        <p><b>Urls you find useful for learning more about HTML</b></p>
+        <label for="url">Enter an URL:</label>
+        <input type="url" name="url" id="url"
+              placeholder="https://"
+              pattern="https://.*" size="30"
+              required>
+
+        <p><b>Choose your suggested theme color:</b></p>
+        <input type="color" id="theme" name="theme">
+        <label for="theme">theme</label>
+
+        <p><b>Leave your contact email if you wish:</b></p>
+        <label for="email">Enter your contact email:</label>
+        <input type="email" id="email"
+              size="30" required>
+        <button>
+          Submit
+        </button>
+
+      </section>
+
+    
+      <section>
+        <h2>End of the Page</h2>
+      <svg viewBox="0 0 30 30" stroke="red" fill="white">
+        <circle cx="5" cy="5" r="3" />
+      </svg>
+      </section>
+
+    </main>
+    <footer>
+        <p>Written by Qingyuan Zhang</p>
+    </footer>
+
+  </body>
 </html>
