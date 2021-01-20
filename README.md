@@ -1,1 +1,1 @@
-url: https://github.com/gtz05050708/wi21-cse110-lab3
+url: https://gtz05050708.github.io/wi21-cse110-lab3/
