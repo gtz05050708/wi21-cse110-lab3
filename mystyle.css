@@ -1,1 +1,98 @@
+/*change background color of a h1 with class yellowBG*/
+h1.yellowBg {
+    background: #ffa;
+}
 
+/*change all fonts to roboto*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*change foot color to red*/
+.foot {
+    color: red;
+}
+
+/* change text color to red*/
+p, h1, h2, h3 {
+    color: #ff6347;
+}
+
+/* change bg color of quote*/
+#quote {
+    background-color: rgb(98, 98, 224);
+}
+
+/* Create border for each section */
+section{
+    position: relative;
+    left: 40px;
+    min-width: 0%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin: auto;
+    border-color: hsl(0, 100%, 50%);
+    border-style: double;
+    border-radius: 9in 5mm;
+    border-width: 3px;
+    padding-top: 3vh;
+    padding-right: 3vw;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+}
+
+/* adjust padding and margin for div */
+div {
+    position: static;
+    padding: 1mm 10pc 1in 10ex;
+    margin: 10px 10px 10px 10px;
+}
+
+/*change color of button when hovering*/
+button:hover {
+    color: blue;
+}
+
+/*add underline to caption with attribute class="bold"*/
+caption[class = "bold"] {
+    text-decoration: underline;
+    margin: auto;
+}
+
+/*add underline to figcation after image*/
+img + figcaption {
+    text-decoration: underline;
+}
+
+/*make line red when pressed*/
+a:active {
+    color: red;
+}
+
+/*make td udner tr blue*/
+tr td {
+    color: blue;
+}
+
+/*make th display :inline*/
+th {
+    display: inline;
+}
+
+/*make adjacent li blue*/
+li ~ li {
+    background-color:blue;
+}
+
+/*is 1920 px or less, center align everything in body*/
+@media screen and (max-width: 1920px) {
+    body {
+        text-align: center;
+    }
+}
