@@ -23,6 +23,7 @@ section > h2 {
     color: #ff6347;
 }
 
+
 /* change bg color of quote*/
 #quote {
     background-color: rgb(98, 98, 224);
@@ -119,3 +120,7 @@ li ~ li {
     align-items: center;
 }
 
+/*make all h2 under setcion red*/
+section > h2 {
+    color: black;
+}
