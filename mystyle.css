@@ -20,7 +20,7 @@ p, h3 {
 
 /*make all h2 under setcion black*/
 section > h2 {
-    color:black;
+    color: black;
 }
 
 
