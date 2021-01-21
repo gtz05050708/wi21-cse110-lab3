@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Qingyuan Zhang's User Page</title>
     <link rel="stylesheet" href="mystyle.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title>Qingyuan Zhang's User Page</title>
     <meta name="author" content="Qingyuan Zhang">
   </head>
 
@@ -12,7 +13,7 @@
     </header>
      
     <main>
-      <div>
+      <div class="stat">
         <picture>
           <source srcset="portrait.jpg" media="(min-width: 200px)">
           <img src="portrait.jpg" alt="My Portrait">
@@ -184,99 +185,116 @@
       </section>
 
       <section>
-        <h2>Quiz About Me</h2>
-        <form>
-          <fieldset>
-            <legend>Whose my favorite author?</legend>
-        
-            <input type="radio" id="Orwell" name="author">
-            <label for="Orwell">George Orwell</label>
-        
-            <input type="radio" id="Twain" name="author">
-            <label for="Twain">Mark Twain</label>
-        
-            <input type="radio" id="Hemingway" name="author">
-            <label for="Hemingway">Ernest Hemingway</label>
-          </fieldset>
-        </form>
+        <div class="grid">
+          <div class="grid1">
+            <h2>Quiz About Me</h2>
+            <form>
+              <fieldset>
+                <legend>Whose my favorite author?</legend>
+            
+                <input type="radio" id="Orwell" name="author">
+                <label for="Orwell">George Orwell</label>
+            
+                <input type="radio" id="Twain" name="author">
+                <label for="Twain">Mark Twain</label>
+            
+                <input type="radio" id="Hemingway" name="author">
+                <label for="Hemingway">Ernest Hemingway</label>
+              </fieldset>
+            </form>
+          </div>
 
-        <hr>
+          <div class="grid2">
+            <form>
+              <label for="food">Which one of these is not one of my favorite food?</label>
+              <select id="food">
+                  <optgroup label="Pasta">
+                      <option>Spaghetti</option>
+                      <option>Fettuccine</option>
+                  </optgroup>
+                  <optgroup label="Steak">
+                      <option>Ribeye</option>
+                      <option>Sirloin</option>
+                  </optgroup>
+              </select>
+            </form>
+          </div>
 
-        <form>
-          <label for="food">Which one of these is not one of my favorite food?</label>
-          <select id="food">
-              <optgroup label="Pasta">
-                  <option>Spaghetti</option>
-                  <option>Fettuccine</option>
-              </optgroup>
-              <optgroup label="Steak">
-                  <option>Ribeye</option>
-                  <option>Sirloin</option>
-              </optgroup>
-          </select>
-        </form>
+          <div class="grid3">
+            <label for="languageselect-id">Which of the following is my favorite programming language?</label>
+            <input list="languageselect" id="languageselect-id" name="languageselect-id" />
 
-        <hr>
-
-        <label for="languageselect-id">Which of the following is my favorite programming language?</label>
-        <input list="languageselect" id="languageselect-id" name="languageselect-id" />
-
-        <datalist id="languageselect">
-          <option value="C">
-          <option value="C++">
-          <option value="Python">
-          <option value="Java">
-          <option value="C#">
-      </datalist>
+            <datalist id="languageselect">
+              <option value="C">
+              <option value="C++">
+              <option value="Python">
+              <option value="Java">
+              <option value="C#">
+            </datalist>
+          </div>
+        </div>
       </section>
 
       <hr>
 
       <section>
-        <h2>Suggestion for my User Page</h2>
-        <label for="picture"><b>What picture would you like to add?</b></label>
-        <input type="file"
-              id="picture" name="picture"
-              accept="image/png, image/jpeg">
-        
-        <p><b>Rate my Page</b></p>
-        <label for="score3">3</label>
-        <input type="checkbox" id="score3" name="3">
+        <div class="container">
+          <div class="item1">
+            <h2>Suggestion for my User Page</h2>
+            <label for="picture"><b>What picture would you like to add?</b></label>
+            <input type="file"
+                  id="picture" name="picture"
+                  accept="image/png, image/jpeg">
+          </div>
 
-        <label for="score2">2</label>
-        <input type="checkbox" id="score2" name="2">
+          <div class="item2">
+            <p><b>Rate my Page</b></p>
+            <label for="score3">3</label>
+            <input type="checkbox" id="score3" name="3">
 
-        <label for="score1">1</label>
-        <input type="checkbox" id="score1" name="1">
-        
-        <p><b>Please leave any addtional comments here</b></p>
-        <form>
-          <label for="comments">Comments (1 to 255 characters):</label>
-          <input type="text" id="comments" name="comments" required
-                minlength="1" maxlength="255" size="40">
-          <input type="submit" value="Send Comments">
-          <input type="reset" value="Reset">
-        </form>
+            <label for="score2">2</label>
+            <input type="checkbox" id="score2" name="2">
 
-        <p><b>Urls you find useful for learning more about HTML</b></p>
-        <label for="url">Enter an URL:</label>
-        <input type="url" name="url" id="url"
-              placeholder="https://"
-              pattern="https://.*" size="30"
-              required>
+            <label for="score1">1</label>
+            <input type="checkbox" id="score1" name="1">
+          </div>
+          
+          <div class="item3">
+            <p><b>Please leave any addtional comments here</b></p>
+            <form>
+              <label for="comments">Comments (1 to 255 characters):</label>
+              <input type="text" id="comments" name="comments" required
+                    minlength="1" maxlength="255" size="40">
+              <input type="submit" value="Send Comments">
+              <input type="reset" value="Reset">
+            </form>
+          </div>
 
-        <p><b>Choose your suggested theme color:</b></p>
-        <input type="color" id="theme" name="theme">
-        <label for="theme">theme</label>
+          <div class="item4">
+            <p><b>Urls you find useful for learning more about HTML</b></p>
+            <label for="url">Enter an URL:</label>
+            <input type="url" name="url" id="url"
+                  placeholder="https://"
+                  pattern="https://.*" size="30"
+                  required>
+          </div>
 
-        <p><b>Leave your contact email if you wish:</b></p>
-        <label for="email">Enter your contact email:</label>
-        <input type="email" id="email"
-              size="30" required>
-        <button>
-          Submit
-        </button>
+          <div class="item5">
+            <p><b>Choose your suggested theme color:</b></p>
+            <input type="color" id="theme" name="theme">
+            <label for="theme">theme</label>
+          </div>
 
+          <div class="item6">
+            <p><b>Leave your contact email if you wish:</b></p>
+            <label for="email">Enter your contact email:</label>
+            <input type="email" id="email"
+                  size="30" required>
+            <button>
+              Submit
+            </button>
+          </div>
+        </div>
       </section>
 
     

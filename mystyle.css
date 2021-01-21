@@ -3,9 +3,9 @@ h1.yellowBg {
     background: #ffa;
 }
 
-/*change all fonts to roboto*/
+/*change all fonts to Trirong*/
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Trirong", serif;
 }
 
 /*change foot color to red*/
@@ -14,8 +14,13 @@ h1.yellowBg {
 }
 
 /* change text color to red*/
-p, h1, h2, h3 {
+p, h3 {
     color: #ff6347;
+}
+
+/*make all h2 under setcion red*/
+section > h2 {
+    color: red;
 }
 
 /* change bg color of quote*/
@@ -31,7 +36,6 @@ section{
     max-width: 100%;
     height: auto;
     width: auto;
-    margin: auto;
     border-color: hsl(0, 100%, 50%);
     border-style: double;
     border-radius: 9in 5mm;
@@ -48,7 +52,7 @@ section{
 }
 
 /* adjust padding and margin for div */
-div {
+div.stat{
     position: static;
     padding: 1mm 10pc 1in 10ex;
     margin: 10px 10px 10px 10px;
@@ -96,3 +100,22 @@ li ~ li {
         text-align: center;
     }
 }
+
+/*flexbox*/
+.container {
+    display: flex;
+    background-color: DodgerBlue;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch
+}
+
+/*grid*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
