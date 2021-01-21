@@ -18,7 +18,7 @@ p, h3 {
     color: #ff6347;
 }
 
-/*make all h2 under setcion black*/
+/*make all h2 under setcion red*/
 section > h2 {
     color:#ff6347;
 }
