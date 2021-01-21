@@ -20,7 +20,7 @@ p, h3 {
 
 /*make all h2 under setcion red*/
 section > h2 {
-    color: #ff6347;
+    color: black;
 }
 
 
@@ -118,9 +118,4 @@ li ~ li {
     grid-gap: 1rem;
     justify-items: center;
     align-items: center;
-}
-
-/*make all h2 under setcion red*/
-section > h2 {
-    color: black;
 }
