@@ -20,7 +20,7 @@ p, h3 {
 
 /*make all h2 under setcion red*/
 section > h2 {
-    color: red;
+    color: black;
 }
 
 /* change bg color of quote*/
