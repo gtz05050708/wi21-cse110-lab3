@@ -15,7 +15,12 @@ h1.yellowBg {
 
 /* change text color to red*/
 p, h3 {
-    color: black;
+    color: #ff6347;
+}
+
+/*make all h2 under setcion red*/
+section > h2 {
+    color: #ff6347;
 }
 
 
